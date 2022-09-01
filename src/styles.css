@@ -1,0 +1,282 @@
+
+.subtitle {
+    height: 40px;
+    flex-direction: row;
+    justify-content: end;
+
+}
+.container {
+    width: 100wh;
+    margin: 0 0px;
+    padding: 60px 100px;
+}
+
+.d-flex {
+    display: flex !important;    
+}
+.widthMax{
+    width: max-content;
+}
+
+@media  (max-width: 425px) {
+    .d-flex {
+        flex-direction: column !important;
+    }
+    .container {
+        width: 90%;
+        margin: 0 3% 0 0; 
+    }
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+.flex-row {
+    flex-direction: row !important;
+}
+@media  (max-width: 425px) {
+    .flex-row {
+        flex-direction: column !important;
+    }
+}
+.bgDark{
+    background-color: #111217;
+}
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+li, a {
+    outline: none;
+    text-decoration: none;
+    color: #edf0f1;
+    
+}
+a:active {
+    background: #265301;
+    color: #CDFEAA;
+  }
+
+h1,
+h2,
+h3,
+h4{
+    color: white;
+    margin: 0;
+}
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', monospace;
+    color: whitesmoke;
+}
+body{
+    background-color: #17181f;
+    margin: 0;
+}
+
+.vh-100 {
+    width: 100wh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+@media  (max-width: 425px) {
+    .vh-100 {
+        width: max-content;
+        height: min-content;
+    }
+}
+.nav {
+
+    height: 50px;
+    display: flex;
+    background-color: #111217;
+    margin: 0;
+    padding: 10px 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+    align-items: center;
+}
+.nav_links li a {
+    transition: all 0.4s ease 0s;
+}
+.nav_links li a:hover{
+    color: #668fff;
+}
+.logo {
+    cursor: pointer;
+    width: 50px;
+}
+
+/* NOSOTROS */
+.d-flex > .oneColum {
+    width: 40%;
+    padding: 10px;
+}
+
+
+.textoNosotros {
+    font-size: 1.05rem;
+    text-align: start;
+    letter-spacing: 6px;
+}
+
+@media  (max-width: 425px) {
+    .d-flex > .oneColum {
+        width: 90%;
+        padding: 0px;
+    }
+    .textoNosotros {
+        font-size: 1rem;
+        text-align: start;
+        letter-spacing: 5px;
+    }
+}
+.logoNosotros {
+    width: 98%;
+    padding: 0px 60px;
+}
+@media  (max-width: 425px) {
+    .logoNosotros {
+        padding: 0px;
+    }
+}
+.none {
+    display: none !important;
+}
+
+/* que hacemos */
+
+.creamosCard{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.iconQueHacemos {
+    width: 100px;
+    margin: 0;
+   justify-content: center;
+   align-items: center;
+   
+
+}
+.textQueHacemos{
+    margin: 20px 100px;
+    
+}
+.icoBox {
+    margin: 0;
+    padding: 0;
+}
+.oneColumn {
+    width: 50%;
+    height: max-content;
+}
+
+@media (max-width: 425px) {
+    .oneColumn {
+        width: 100%;
+        height: max-content;
+    }
+}
+
+/* portfolio   */
+.cardPortfolio {
+    width: 850px;
+    height: 300px;
+    background-color: #252528;
+    border-radius: 30px;
+    border: solid 4px ;
+    border-image: linear-gradient(to right, #6c72cb, #CB69C1) 1;
+    margin: 5% 15% 5% 10%;
+}
+
+@media (max-width: 425px) {
+    .cardPortfolio {
+        width: 350px;
+        height: auto;
+        margin: 0px 0% 0px 6%;
+    }
+    
+}
+.cardSubtitle {
+    margin: 25px 50px ;
+}
+.center {
+    text-align: center;
+    padding: 6px;
+}
+.border {
+    background: linear-gradient(var(#111217), var(#111217)) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 22px;
+    border: 4px solid transparent;
+}
+.gradient-box {
+  border: solid 4px;
+  }
+
+.gradient-box:before {
+
+    z-index: -1;
+    margin: border  !important;
+    border-radius: inherit  !important;
+    background: linear-gradient(to right, red, orange);
+  }
+.textCard {
+    margin: 0px 25px 0px 50px;
+}
+.box {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxImg {
+    width: max-content;
+    margin: auto;
+    padding: 1px 50px;
+    justify-content: center;
+    align-items: center;
+}
+.imgCard {
+    width: 250px;
+    border-radius: 10px;    
+}
+
+/* footer */
+footer{
+    width: 100wh;
+    display: flex;
+    background-color: #111217;
+    justify-content: center;
+}
+/* contacto */
+
+/* formulario */
+.form {
+    width: "";
+    justify-content: flex-start;
+}
+
+/* redes */
+.boxRedes > div {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+}
+
+.boxIcon {
+    width: 40px;
+}
+.logoContacto {
+    width: 150px;
+}
