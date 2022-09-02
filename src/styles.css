@@ -23,7 +23,7 @@
         flex-direction: column !important;
     }
     .container {
-        width: 90%;
+        width: 100%;
         margin: 0 3% 0 0; 
     }
 }
@@ -129,7 +129,7 @@ body{
 }
 
 @media  (max-width: 425px) {
-    .d-flex > .oneColum {
+    .oneColum {
         width: 90%;
         padding: 0px;
     }
@@ -198,7 +198,7 @@ body{
 }
 @media (max-width: 425px) {
     .cardPortfolio {
-        width: 350px;
+        width: max-content;
         height: auto;
         margin: 0px 0% 0px 6%;
     }
@@ -231,6 +231,12 @@ body{
 .textCard {
     margin: 0px 25px 0px 50px;
 }
+@media (max-width: 425px) {
+    .textCard {
+        width: 350px;
+        margin: 0px 25px 0px 50px;
+    }
+}
 .box {
     width: max-content;
     display: flex;
@@ -257,20 +263,24 @@ footer{
     justify-content: center;
 }
 /* contacto */
-
+.contacto {
+    margin-bottom: 60px;
+}
 /* formulario */
 
 
 input {
-    width: max-content;
+    width: 150px;
     margin: 10px ;
     color: #edf0f1; 
+    transition: ease-in-out;
 }
-input:focus {
-   
+input:focus, textarea:focus {
+    width: max-content;
+    outline: none;
 }
 textarea {
-    width: max-content;
+    width: 150px;
     color: #edf0f1; 
     resize: none;
     padding: 12px 20px;
