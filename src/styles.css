@@ -268,15 +268,32 @@ footer{
 }
 
 /* redes */
-.boxRedes > div {
+.redes {
+    width: max-content;
     display: flex;
-    text-align: right;
+}
+.boxRedes {
+    width: max-content;
     flex-direction: column;
+   
+}
+.rigth {
+    justify-content: end;
+}
+.textRedes {
+    display: flex;
+    align-items: center;
+}
+.textRedes > p {
+    margin: 0;
+    padding: 0;
 }
 
-.boxIcon {
-    width: 40px;
-}
+
 .logoContacto {
     width: 150px;
+}
+.icon{
+    width: 30px;
+    margin: 2px 10px;
 }
