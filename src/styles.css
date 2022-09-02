@@ -268,14 +268,14 @@ footer{
 }
 
 /* redes */
+
 .redes {
     width: max-content;
     display: flex;
 }
 .boxRedes {
-    width: max-content;
+    width: 500px;
     flex-direction: column;
-   
 }
 .rigth {
     justify-content: end;
