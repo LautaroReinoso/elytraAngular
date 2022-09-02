@@ -41,14 +41,14 @@
 </div>
 <!-- Nosotros -->
 <div id="nosotros" class="container d-flex flex-column">
-    <div class="flex-row subtitle">
-        <div class="d-flex gradient-box  box">
+    <div class="flex-row d-flex">
+        <div class="d-flex box borderSubtitle">
             <p>NOSOTROS</p>
         </div>
     </div>
     <div class="d-flex flex-row">
         <div class="d-flex">
-            <div class=" textoNosotros">
+            <div class="textoNosotros">
                 <p class="textoNosotros">Somos una productora de música para videojuegos, audiovisuales y publicidad.</p>
                 <p class="textoNosotros">Contamos con una amplia gama de intérpretes para todos los géneros, varios estudios de grabación a disposición y excelentes productores de sonido</p>
                 <p class="textoNosotros">Enfocados en la música para videojuegos, nos apasiona la creación y la implementación a través de wwise y fmod.</p>
@@ -64,8 +64,8 @@
 </div>
 <!-- QUE HACEMOS -->
 <div id="queHacemos" class="container d-flex flex-column bgDark">
-    <div class="flex-row">
-        <div class="subtitle">
+    <div class="flex-row subtitle">
+        <div class="d-flex box borderSubtitle">
             <p>QUE HACEMOS</p>
         </div>
     </div>
@@ -133,10 +133,10 @@
 <!-- portfolio -->
 <div id="portfolio" class="container d-flex ">
     <!-- card niñas ayohuma -->
-    <div class="cardPortfolio d-flex ">
+    <div class="cardPortfolio d-flex border">
         <div class="d-flex flex-column oneColumn box">
-            <div class="d-flex cardSubtitle">
-                <h4 class="border center" >
+            <div class="d-flex cardSubtitle borderSubtitle">
+                <h4 class=" center" >
                     Niñas de ayohuma
                 </h4>
             </div>
@@ -161,10 +161,10 @@
 </div>
 <div class="container d-flex flex-column bgDark">
     <!-- RPG -->
-    <div class="cardPortfolio d-flex">
+    <div class="cardPortfolio d-flex border">
         <div class="d-flex flex-column oneColumn box ">
-            <div class="d-flex cardSubtitle">
-                <h4 class="border center" >
+            <div class="d-flex cardSubtitle borderSubtitle">
+                <h4 class=" center" >
                     Niñas de ayohuma
                 </h4>
             </div>
@@ -186,10 +186,10 @@
 </div>
 <div class="container d-flex flex-column">
     <!-- epiphany-->
-    <div class="cardPortfolio d-flex ">
+    <div class="cardPortfolio d-flex border">
         <div class="d-flex flex-column oneColumn box">
-            <div class="d-flex cardSubtitle">
-                <h4 class="border center" >
+            <div class="d-flex cardSubtitle borderSubtitle">
+                <h4 class=" center" >
                     Niñas de ayohuma
                 </h4>
             </div>
@@ -212,24 +212,25 @@
 <!-- footer -->
 <footer id="contacto" class="vh-100 d-flex ">
     <div class="d-flex flex-column box ">
-        <div class="d-flex subtitle border box">
+        <div class="d-flex subtitle borderSubtitle box ">
             <p>CONTACTO</p>
         </div>
         <div class="d-flex flex-row ">
             <!-- col  -->
-            <div class="flex-column oneColumn form " >
-                <form action="" method="get">
-                    <div>
-                        <input type="text" placeholder="Nombre" id="nombre">
+            <div class="flex-column oneColumn  " >
+                <form class="d-flex  flex-column box"action="" method="get">
+                    <div >
+                        <input class="borderSubtitle " type="text" placeholder="Nombre" id="nombre">
                     </div>    
                     <div>
-                        <input type="text" placeholder="e-mail" id="e-mail">
+                        <input class="borderSubtitle" type="text" placeholder="e-mail" id="e-mail">
                     </div>
                     <div>
-                        <input type="text" placeholder="Mensaje" id="mensaje">
+                        
+                        <textarea class="borderSubtitle " name="mensaje" id="mensaje"  rows="8"></textarea>
                     </div>
-                    <div>
-                        <input type="submit" value="enviar">
+                    <div class="">
+                        <input class="borderSubtitle " type="submit" value="ENVIAR">
                     </div>
                 </form>
             </div>
@@ -304,5 +305,4 @@
             </div>
         </div>
     </div>
-    
 </footer>
