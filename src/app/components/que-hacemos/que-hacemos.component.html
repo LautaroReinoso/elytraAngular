@@ -1,0 +1,22 @@
+<div class="flex-row d-flex">
+    <div class="box borderSubtitle subtitle">
+        <p>QUE HACEMOS</p>
+    </div>
+</div>
+<div class="grandQhacemos">
+    <div *ngFor="let card of queHacemos" class="boxCard d-flex">
+        <div class="d-flex Card ">
+            <!-- svg -->
+            <div class="iconBox">
+                <img class="iconQueHacemos" src={{card.src}} alt="">
+            </div>
+            <!-- texto -->
+            <div>
+                <h4>{{card.subtitle}}</h4>
+            </div>
+            <div>
+                <p class="textQueHacemos"> {{card.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>

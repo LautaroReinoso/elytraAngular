@@ -1,0 +1,80 @@
+.title {
+    max-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 40% 0 40%;
+}
+
+.cardPortfolio {
+    width: 850px;
+    height: 300px;
+    background-color: #252528;
+    border-radius: 15px;
+    margin: 3% 16%;
+    align-items: center;
+}
+.cardSubtitle {
+    margin: 25px 50px ;
+}
+.center {
+    text-align: center;
+    padding: 6px;
+}
+.textCard {
+    font-size: 1.0rem;
+    font-weight: 100;
+    text-align: start;
+    letter-spacing: 6px;
+    padding: 0px 40px;
+    margin: 0px 15px 0px 50px;
+}
+
+.box {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxImg {
+    width: max-content;
+    margin: auto;
+    padding: 1px 50px;
+    justify-content: center;
+    align-items: center;
+}
+.imgCard {
+    width: 250px;
+    border-radius: 10px;    
+}
+
+@media (max-width: 580px) {
+    .title {
+        max-width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 30% 0 30%;
+    }
+    .cardPortfolio {
+        position: relative;
+        left: 15%;
+        width: 300px;
+        height: auto;
+        padding: 0;
+        margin: 40px 0 40px 0;
+        align-items: center;
+    }
+    .cardSubtitle {
+        margin: 25px 50px 10px 50px ;
+    }
+    .textCard {
+        width: 298px;
+        margin: 0 ;
+        padding: 0;
+    }
+    .textCard > p {
+        padding: 0 30px;
+        text-align: left;
+    }
+}

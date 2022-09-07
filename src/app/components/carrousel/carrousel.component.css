@@ -1,0 +1,47 @@
+.boxTitle {
+    width: max-content;
+    padding: 20px 40px;
+}
+
+.subtitle {
+    width: 650px;
+    height: min-content;
+    margin: 0;
+    letter-spacing: 0.7rem;
+    text-align: left;
+    font-weight: 100;
+}
+.grandCarrousel {
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    top: -5px;
+    z-index: -1;
+}
+.imgCarrousel {
+    width: 100%;
+}
+
+
+@media (max-width: 580px) {
+    .boxTitle {
+        width: 425px;
+        min-height: 100px;
+        padding: 0;
+    }
+    .title {
+        margin: 20px 20px 10px 20px;
+    }
+    .subtitle {
+        width: 400px;
+        height: min-content;
+        padding: 0;
+        margin: 10px 20px;
+        letter-spacing: normal;
+        
+    }
+    .grandCarrousel {
+        max-width: max-content;
+        height: auto;
+    }
+}

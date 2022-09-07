@@ -1,0 +1,31 @@
+.textoNosotros {
+    font-size: 1.05rem;
+    text-align: start;
+    letter-spacing: 6px;
+    margin: 20px 5px 0 20px;
+    padding: 0px 40px;
+}
+.logoNosotros {
+    width: 95%;
+    padding: 0px 60px;
+}
+@media  (max-width: 580px) {
+    .subtitle {
+        min-width: none;
+        max-width: 160px;
+    }
+    .textoNosotros {
+        width: 340px;
+        font-size: 1.0rem;
+        padding: 0px 4px;
+        margin: 0 0 20px 20px;
+    }
+    .logoNosotros {
+        width: 200px;
+        padding: 0px;
+        position: relative;
+        left: 28%;
+        margin: 20px 0;
+    }
+}
+

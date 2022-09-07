@@ -1,0 +1,31 @@
+<div class="nav">
+    <div class="d-flex">
+        <img class="logo" src="../assets/logo.png" alt="">
+    </div>
+    <nav class="">
+        <ul class="nav_links ">
+            <li class="burger" (click)="toggleMenu()">
+                <i>
+                    <img  class="burgerImg" src="../../../assets/img/icon/burger.svg" alt="" > {{ isMenuOpen ? "menu" : "close" }}              
+                </i>
+           
+            </li>
+            <li class="menu d-flex " [class.menu.diplay.block] = "isMenuOpen" >
+                
+                <a class="ancla" href="#nosotros">
+                    <p>Nosotros</p>
+                </a>
+                <a class="ancla" href="#queHacemos">
+                    <p>Que hacemos</p>
+                </a>
+                <a class="ancla" href="#portfolio">
+                    <p>Portfolio</p>
+                </a>
+                <a class="ancla" href="#contacto">
+                    <p>Contacto</p>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</div>

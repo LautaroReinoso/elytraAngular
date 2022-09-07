@@ -1,0 +1,92 @@
+.grandContacto{
+    align-self: center;
+    padding: 60px 300px;
+}
+.contacto {
+    position: relative;
+    left: 35%;
+    width: 120px;
+    justify-content: center;
+}
+/* formulario */
+
+
+input {
+    width: 150px;
+    margin: 10px ;
+    color: #edf0f1; 
+    transition: ease-in-out;
+}
+input:focus, textarea:focus {
+    width: max-content;
+    outline: none;
+}
+textarea {
+    width: 150px;
+    color: #edf0f1; 
+    resize: none;
+    padding: 12px 20px;
+}
+
+/* redes */
+
+.redes {
+    width: max-content;
+    display: flex;
+}
+.boxRedes {
+    width: 500px;
+    flex-direction: column;
+}
+.rigth {
+    justify-content: end;
+}
+.textRedes {
+    display: flex;
+    align-items: center;
+}
+.textRedes > p {
+    margin: 0;
+    padding: 0;
+}
+.logoContacto {
+    width: 150px;
+}
+.icon{
+    width: 30px;
+    margin: 2px 10px;
+}
+
+@media (max-width: 580px) {
+    .grandContacto{
+        align-self: center;
+        padding: 0;
+        text-align: center;
+        
+    }
+    .contacto {
+        width: 100px;
+        justify-content: center;
+        margin: 16px 0px;
+    }
+    .boxRedes {
+        width: max-content;
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+    .redes {
+        width: 425px;
+        height: max-content;
+        justify-content: center;
+    }
+  
+    .textIcon {
+        flex-direction: row !important;
+        justify-content: end;
+    }
+    .logoContacto {
+        position: relative;
+        margin: auto;
+        padding: 0 0 30px 0px;
+    }
+}
