@@ -3,8 +3,7 @@
     padding: 60px 300px;
 }
 .contacto {
-    position: relative;
-    left: 35%;
+   margin: 30px 0;
     width: 120px;
     justify-content: center;
 }
@@ -25,13 +24,14 @@ textarea {
     width: 150px;
     color: #edf0f1; 
     resize: none;
+    margin: 0;
     padding: 12px 20px;
 }
 
 /* redes */
 
 .redes {
-    width: max-content;
+    width: 100%;
     display: flex;
 }
 .boxRedes {
@@ -67,15 +67,25 @@ textarea {
     .contacto {
         width: 100px;
         justify-content: center;
-        margin: 16px 0px;
+        margin: 20x 0px;
+    }
+    input {
+        margin: 10px 0;
+    }
+    textarea {
+        width: 100%;
+        color: #edf0f1; 
+        resize: none;
+        padding: 12px 20px;
     }
     .boxRedes {
         width: max-content;
         flex-direction: column;
         padding: 40px 0px;
     }
+
     .redes {
-        width: 425px;
+        width: 100%;
         height: max-content;
         justify-content: center;
     }
@@ -84,8 +94,13 @@ textarea {
         flex-direction: row !important;
         justify-content: end;
     }
+    .boxLogo{
+        width: 100%;
+     
+        justify-content: end;
+    }
     .logoContacto {
-        position: relative;
+        
         margin: auto;
         padding: 0 0 30px 0px;
     }

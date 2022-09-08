@@ -15,7 +15,7 @@ html {
 .container {
     width: 100%;
     margin: 0 0px;
-    padding: 60px 100px;
+    padding: 60px 120px;
 }
 .container-fluid {
     width: 100%;
@@ -48,7 +48,10 @@ html {
 }
 
 .flex-column {
+    width: 100% ;
     flex-direction: column !important;
+    align-items: center;
+    
 }
 .flex-row {
     flex-direction: row !important;
@@ -76,19 +79,19 @@ a:active {
     background: #265301;
     color: #CDFEAA;
   }
-
-h1 {
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(168, 168, 168);
+}
+h1,
+h3,
+h4{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 300;
     color: whitesmoke;
 }
-h2,
-h3,
-h4{
-    
-    color: white;
-}
 p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', monospace;
+    font-family: 'Courier New', Courier, monospace;
     color: whitesmoke;
 }
 body{

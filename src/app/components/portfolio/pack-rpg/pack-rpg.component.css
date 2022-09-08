@@ -42,9 +42,7 @@
 
 @media (max-width: 580px) {
     .cardPortfolio {
-        position: relative;
-        left: 15%;
-        width: 300px;
+        width: 100%;
         height: auto;
         padding: 0;
         margin: 40px 0 40px 0;
