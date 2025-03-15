@@ -1,0 +1,38 @@
+  <div data-aos="fade-up" data-aos-duration="1500"  class="work-container">
+    <h2 class="section-title">Work Showcase</h2>
+    
+    <!-- Pestañas -->
+    <div class="tabs">
+      <a
+        class="tab"
+        [class.active]="activeTab === 'compositions'"
+        (click)="setActiveTab('compositions')">
+        <h3>Compositions & Arrangements</h3>
+      </a>
+      <a
+        class="tab"
+        [class.active]="activeTab === 'videoGames'"
+        (click)="setActiveTab('videoGames')">
+        <h3>Video Games</h3>
+      </a>
+      <a
+        class="tab"
+        [class.active]="activeTab === 'productions'"
+        (click)="setActiveTab('productions')">
+        <h3>Productions & Films</h3>
+      </a>
+    </div>
+  
+    <!-- Contenido de las pestañas -->
+    <div class="tab-content">
+      <div *ngIf="activeTab === 'compositions'">
+        <app-compositions class="center-container"></app-compositions>
+           </div>
+      <div *ngIf="activeTab === 'videoGames'">
+        <app-videogames></app-videogames>
+      </div>
+      <div *ngIf="activeTab === 'productions'">
+        <p>Detalles de Productions & Films...</p>
+      </div>
+    </div>
+  </div>

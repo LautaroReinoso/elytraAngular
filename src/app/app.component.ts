@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as AOS from 'aos'
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,17 @@ import * as AOS from 'aos'
 })
 export class AppComponent {
   title = 'elytra';
+  constructor() {
+
+  }
   ngOnInit(): void {
     AOS.init();
     window.addEventListener('load', AOS.refresh);
   }
+
+  
+
+	ngAfterViewInit() {
+		
+	}
 }

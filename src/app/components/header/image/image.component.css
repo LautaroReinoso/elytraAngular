@@ -1,0 +1,95 @@
+/* Contenedor principal */
+.hero-container {
+    position: relative;
+
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .hero-image {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    min-height: 400px; /* Altura mínima para evitar que se colapse */
+    aspect-ratio: 16/9; /* Mantiene relación de aspecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.4) 100%),
+      url("../../../../assets/img/carrousel/1.png") center/cover no-repeat;
+    border-radius: 12px;
+}
+  
+  
+  /* Contenido */
+  .hero-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+  }
+  
+  /* Título */
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Botón */
+  .hero-button {
+    background-color: #019863;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .hero-button:hover {
+    background-color: #017d52;
+  }
+  
+  /* ======= RESPONSIVE ======= */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+    .hero-image {
+      min-height: 300px;
+      aspect-ratio: 4/3; /* Relación más cuadrada en tablets */
+  }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-button {
+      font-size: 0.85rem;
+      padding: 8px 18px;
+    }
+    .hero-image {
+      min-height: 250px;
+      max-width: 100%;
+      aspect-ratio: 1/1; /* Más cuadrado en móviles */
+      border-radius: 8px;
+  }
+  }
+  

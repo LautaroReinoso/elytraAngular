@@ -1,0 +1,70 @@
+/* Estilos generales */
+.section-title {
+    color: #1C160C;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    padding: 20px 16px 12px;
+    text-align: center;
+  }
+  
+  /* Contenedor principal */
+  .about-container {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    flex-wrap: wrap; /* Permite que se ajuste en pantallas pequeñas */
+  }
+  
+  /* Contenido interno */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  /* Imagen de perfil (ahora responsive) */
+  .about-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 158px;
+    height: 158px;
+    aspect-ratio: 1 / 1; /* Mantiene la imagen cuadrada */
+    max-width: 100%; /* Se ajusta a distintos tamaños de pantalla */
+    overflow: hidden
+  }
+  .about-image img {
+    width: 100%;
+    height: 100%;
+}
+  /* Sección de texto */
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px; /* Se ajusta mejor en móviles */
+  }
+  
+  /* Nombre */
+  .name {
+    color: #1C160C;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.015em;
+  }
+  
+  /* Descripción */
+  .description {
+    color: #A18249;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    max-width: 280px;
+    padding: 0 10px; /* Mejora legibilidad en móviles */
+  }
+  

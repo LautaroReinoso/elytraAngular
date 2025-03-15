@@ -1,0 +1,23 @@
+<div  class="compositions-container">
+    <h2 class="section-title">Compositions & Arrangements</h2>
+    <!-- Contenedor de proyectos -->
+    <div  class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+      <div *ngFor="let project of projectsToShow; let i = index" class="flex flex-col gap-3 pb-3"
+      data-aos="fade-up" [attr.data-aos-duration]="100 + (i*600)">
+        <div
+          class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+          [style.background-image]="'url(' + project.imageUrl + ')'"
+        ></div>
+        
+        <div>
+          <p class="text-title ] text-base font-medium leading-normal">{{ project.title }}</p>
+          <p class="text-description text-sm font-normal leading-normal">{{ project.description }}</p>
+        </div>
+
+      </div>
+    </div>
+   
+      <button class="btn-primary flex-center">See More</button>
+   
+
+  </div>

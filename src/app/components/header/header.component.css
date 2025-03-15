@@ -1,86 +1,135 @@
-.nav {
-    width: 100%;
-    height: 50px;
+/* ======== HEADER ======== */
+.header {
     display: flex;
-    background-color: #111217;
-    margin: 0;
-    padding: 10px 25px;
-    justify-content: space-between;
     align-items: center;
-}
-
-.nav_links {
+    justify-content:space-between;
+    padding: 12px 40px;
+    border-bottom: 1px solid #f4efe6;
+  }
+  
+  /* Logo */
+  .header__logo {
     display: flex;
-    list-style: none;
     align-items: center;
-}
-.menu {
+    gap: 16px;
+  }
+  
+  .header__icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .header__title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: -0.015em;
+  }
+  .header__menu{
     display: flex;
-}
-.nav_links li a {
-    padding: 0px 20px;
     align-items: center;
-    transition: all 0.4s ease 0s;
-}
-.nav_links li a:hover{
-    color: #668fff;
-}
-.logo {
-    cursor: pointer;
-    width: 50px;
-}
-.burger {
+  }
+  
+  /* ======== BOTÓN HAMBURGUESA ======== */
+  .menu-toggle {
     display: none;
     width: 30px;
-    text-align: center;
-}
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* ======== MENÚ ======== */
+  .header__nav {
+    display: flex;
+  }
+  
+  .nav__list {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  
+  .nav__link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #1c160c;
+  }
+  
+  /* ======== BOTÓN PRINCIPAL ======== */
 
-@media (max-width: 580px) {
-    .nav {
-        height: auto;
-        padding: 0;
-        margin: 0;
+ 
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px; /* Ajusta el tamaño del logo según tu diseño */
+    width: auto;
+    max-width: 180px; /* Evita que crezca demasiado en pantallas grandes */
+  }
+  
+  /* ======== RESPONSIVE ======== */
+  
+  /* 🌐 Tablets (Menú más compacto) */
+  @media (max-width: 1024px) {
+    .header {
+      padding: 12px 20px;
     }
-    .menu {
-        display: none !important;
+  
+    .nav__list {
+      gap: 20px;
+    }
+  
+    .btn-primary {
+      min-width: 70px;
+      height: 35px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* 📱 Mobile (Menú hamburguesa) */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display:flex;
+      z-index: 2;
+    }
+  
+    .header__nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #f4efe6;
+        display: flex;
         align-items: center;
-        height: 100%;
-        transition: all 0.4s ease 0s;
-    }
-    .nav_links{
-        display: flex;
+        justify-content: center;
         flex-direction: column;
-        justify-items:end;
-        text-align: right;
-        
+        gap: 20px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1;
     }
-    .nav_links ul {
-        text-align: right;
+  
+    .header__nav.active {
+      transform: translateX(0);
     }
-    .nav_links li a {
-        padding: 0px 20px;
-        text-align: right;
-        margin-bottom: 20px;
+  
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
-    .nav_links > .burger {
-       display: flex;
-       justify-items: end;
+    .nav__list > li{
+      margin: 15px 0px;
     }
-    a > p {
-        padding: 10px 0px;
-        border-bottom: rgb(212, 212, 212) solid 2px;
-        letter-spacing: 0.3rem;
+    .btn-primary {
+      min-width: 60px;
+      height: 30px;
+      font-size: 0.75rem;
     }
-
-    .logo {
-        cursor: pointer;
-        width: 80px;
+    .logo-container {
+      display: none;
     }
-
-    .burger {
-        display: flex;
-        width: 30px;
-        margin: 20px 30px 0 0;
-     
-    }
-}
+  }

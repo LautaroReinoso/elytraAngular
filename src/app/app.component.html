@@ -2,24 +2,22 @@
 <div class="vh-100">
     <app-header class="vh-100"></app-header>    
     <!-- componente 2 -->
-    <app-carrousel></app-carrousel>
 </div>
-<!-- Nosotros / componente 3 -->
-<div id="nosotros" class="container d-flex flex-column">
-    <app-nosotros></app-nosotros>
+<div class="flex-center">
+    <app-aboutme></app-aboutme>
 </div>
-<!-- QUE HACEMOS / componente 4-->
-<div id="queHacemos" class="container flex-column bgDark ">
-    <app-que-hacemos>
-
-    </app-que-hacemos>
-</div>
-<!-- portfolio componente 5 -->
-<div id="portfolio" class="container-fluid d-flex flex-column" >
-    <!-- card niñas ayohuma -->
-    <app-portfolio></app-portfolio>
+<div class="container">
+    <app-work class="width100 flex-center"></app-work>
 </div>
 <!-- footer componente 6-->
-<footer id="contacto" class="vh-100 bgDark">
-    <app-footer></app-footer>
+<footer id="contacto" class="flex-center">
+   <app-contact></app-contact>
 </footer>
+
+<div class="app">
+	<!-- We'll mount the PSPDFKit UI to this element. -->
+	<div
+		id="pspdfkit-container"
+		style="width: 100%; height: 100vh"
+	></div>
+</div>

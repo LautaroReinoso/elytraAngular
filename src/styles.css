@@ -1,191 +1,70 @@
-html {
-    line-height: 1.15;
-}
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-.subtitle {
-    min-height: 40px;
-    flex-direction: row;
-    justify-content: end;
-
-}
-.container {
+  }
+  
+  body {
+     font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+    background-color: #FFF;
+    color: #1c160c;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 150;
+    letter-spacing: 1px;  /* Aumenta el espacio entre letras */
+  }
+  .width100{
     width: 100%;
-    margin: 0 0px;
-    padding: 60px 120px;
-}
-.container-fluid {
+  }
+  .container {
     width: 100%;
-    margin: 0 0px;
-    padding: 0;
-}
-
-.d-flex {
-    display: flex !important;    
-}
-.widthMax{
-    width: max-content;
-}
-
-
-@media  (max-width: 580px) {
-    .d-flex {
-        flex-direction: column !important;
-    }
-    .container {
-        width: 100%;
-        margin: 0 ; 
-        padding: 0;
-    }
-    .container-fluid {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-.flex-column {
-    width: 100% ;
-    flex-direction: column !important;
+    margin: 0 auto;
+    padding: 0 2%;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    
-}
-.flex-row {
-    flex-direction: row !important;
-}
-@media  (max-width: 580px) {
-    .flex-row {
-        flex-direction: column !important;
-    }
-}
-.bgDark{
-    background-color: #111217;
-}
-img {
-    max-width: 100%;
-    height: auto;
-
-}
-li, a {
-    outline: none;
-    text-decoration: none;
-    color: #edf0f1;
-    
-}
-a:active {
-    background: #265301;
-    color: #CDFEAA;
   }
-h2 {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(168, 168, 168);
+  .center-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px; /* Espaciado opcional */
 }
-h1,
-h3,
-h4{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 300;
-    color: whitesmoke;
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  min-width: 84px;
+  max-width: 120px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #019863;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
-p {
-    font-family: 'Courier New', Courier, monospace;
-    color: whitesmoke;
-}
-body{
-    background-color: #17181f;
-    margin: 0;
-}
-
-.vh-100 {
-    width: 100wh;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-
-.border {
-    background: 
-      linear-gradient(#111217 0 0) padding-box, /*this is your grey background*/
-      linear-gradient(to right, #6c72cb, #CB69C1) border-box;
-    padding: 5px 10px;
-    border: 5px solid transparent;
-    border-radius: 30px;
-    display: inline-block;
-  }
-  .borderSubtitle {
-    background: 
-      linear-gradient(#111217 0 0) padding-box, /*this is your grey background*/
-      linear-gradient(to right, #6c72cb, #CB69C1) border-box;
-    padding: 5px 10px;
-    border: 4px solid transparent;
-    border-radius: 15px;
-    display: inline-block;
-  }
-
-  @media  (max-width: 580px) {
-    .borderSubtitle {
-        background: 
-          linear-gradient(#111217 0 0) padding-box, /*this is your grey background*/
-          linear-gradient(to right, #6c72cb, #CB69C1) border-box;
-        padding: 2px 5px;
-        margin: 20px 0 20px 40px;
-        border: 4px solid transparent;
-        border-radius: 15px;
-        display: inline-block;      
-      }
+.btn-primary:hover {
+  background-color: #017a50;
 }
 
-
-/* NOSOTROS */
-.d-flex > .oneColum {
-    width: 40%;
-    padding: 10px;
-}
-
-
-
-@media  (max-width: 580px) {
-    .oneColum {
-        width: 90%;
-        padding: 0px;
-    }
-    .textoNosotros {
-        font-size: 1rem;
-        text-align: start;
-        letter-spacing: 5px;
-    }
-    .vh-100 {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
+  @media (max-width: 1024px) {
+    .center-container {
+      max-width: 90%; /* Reduce el ancho en pantallas medianas */
+      padding: 16px
     }
 }
 
-.none {
-    display: none !important;
-}
-
-/* que hacemos */
-/*  */
-.oneColumn {
-    width: 50%;
-    height: max-content;
-}
-
-@media (max-width: 580px) {
-    .oneColumn {
-        width: 100%;
-        min-height: max-content;
-        margin: 0;
-        padding: 0;
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Ocupa todo el ancho en móviles */
+        padding: 0 10px; /* Menos padding en móviles */
     }
 }
-
-/* portfolio   */
-/*  */
-
-/* footer */
